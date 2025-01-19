@@ -1,1 +1,162 @@
+/*   ---=== Basic resets and fonts ===---  */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    color: seashell;
+    opacity: 0.9;
+}
+
+body {
+    background-color: black;
+}
+
+h1 { font-size: 44px; } 
+h2 { font-size: 35px; } 
+h3 { font-size: 28px; } 
+h4 { font-size: 24px; } 
+h5 { font-size: 20px; } 
+h6 { font-size: 18px; }
+p { font-size: 22px; } 
+
+/*   ---=== Fixed nav bar ===---  */
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    z-index: 100;
+    opacity: 1;
+}
+
+nav ul {
+    margin-right: 10px;
+}
+
+nav li {
+    display: inline;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+nav li+li {
+    margin-left: 10px;
+}
+
+nav a img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+/*   ---=== Hero section ===---  */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 69px auto 0;
+    background-image: url("../images/img-mission-background.jpg");
+    height: 700px;
+    max-width: 1200px;
+}
+
+header h2, header h4 {
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: black;
+  padding: 10px;
+}
+
+/*   ---=== Catalog section ===---  */
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 60px auto 0;
+}
+
+.catalog h2, .catalog h3 {
+    margin-bottom: 15px;
+}
+
+.item_cards {
+    display: flex;
+    text-transform: capitalize;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card img{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.card {
+  text-align: center;
+}
+
+/*   ---=== Location section ===---  */
+
+.locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    min-height: 500px;
+    margin: 60px auto 0;
+    background-image: url("../images/img-locations-background.jpg");
+    background-position: right;
+    padding: 50px 0;
+}
+
+.locations p {
+    font-size: 18px;
+}
+
+.locations h2 {
+    margin-bottom: 15px;
+}
+
+.location_items_set {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.location_item {
+  background-color: black;
+  opacity: 1;
+  width: 300px;
+  text-align: center;
+  line-height: 2.5;
+  padding-bottom: 10px;
+}
+
+/*   ---=== footer ===---  */
+.main_footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright {
+    margin-left: 5px;
+}
